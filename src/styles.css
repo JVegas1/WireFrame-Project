@@ -1,0 +1,76 @@
+.days {
+    text-align: center;
+    font-weight: 2000;
+    font-display: bold;
+    font-size: 32pt;
+    text-rendering: optimizeLegibility;
+    display: block;
+    padding-left: 570px;
+    font-family: "Square Peg", cursive;
+}
+
+.daytemp {
+    font-size: 12pt;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 50%;
+    font-weight: 2000;
+    font-style: oblique;
+    color: cornflowerblue;
+    padding-left: 600px;
+}
+
+.emojis {
+    text-align: center;
+    font-weight: 2000;
+    font-display: bold;
+    font-size: 50pt;
+    text-rendering: optimizeLegibility;
+    display: block;
+    padding-left: 600px;
+    font-family: "Square Peg", cursive;
+}
+
+.current {
+    padding-top: 75px;
+    padding-left: 30px;
+}
+
+.enter {
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+span {
+    padding-left: 35px;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.card {
+    outline-style: solid;
+    outline-color: darkgray;
+    font-style: italic;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.card-body {
+    font-display: solid;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-left: 105px;
+    text-decoration: underline;
+    text-shadow: 10px;
+}
