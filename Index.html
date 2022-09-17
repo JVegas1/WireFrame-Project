@@ -47,19 +47,19 @@
 
        <div class="weather-temperature">
             <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Clear" id="icon" class="emoj" />
-            <div class="emoj">
+            <div class="icon">
             </div>
-                 <div class="weather-forecast" id="forecast"></div>
+                 
             <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span> m/h</li>
+              <li><span id="humidity">Humidity: %</span></li>
+              <li><span id="wind">Wind:  m/h</span></li>
             </ul>
-
+          
 
 
       <div class="temp">
         <div class="row">
-          <div class="col-sm-2">
+          <div class="col">
             <div class="weather-temperature-two"></div>
             <div class="card" style="line-height: 120%;" ;>
               <div class="card-body">
@@ -69,6 +69,8 @@
                     ><a href="#" id="celsius-link" class="active">°C</a> |
                     <a href="#" id="fahrenheit-link">°F</a></span
                   ></p>
+                   <span class="forecast-temperature-max">°</span>
+          <span class="forecast-temperature-min">°</span>
                 <br /><br /><br />
               </div>
             </div>
@@ -76,37 +78,56 @@
           
 
 
-      <div class="days">
-        <div class="row">
-          <div class="col-md-2">Monday</div>
-          <div class="col-md-2">Tuesday</div>
-          <div class="col-md-2">Wednesday</div>
-          <div class="col-md-2">Thursday</div>
-          <div class="col-md-2">Friday</div>
-        </div>
-      </div>
-      <div class="daytemp">
-        <div class="row">
-          <div class="col-md-2">32° C/ 89.7° F</div>
-          <div class="col-md-2">32° C/ 89.7° F</div>
-          <div class="col-md-2">32° C/ 89.7° F</div>
-          <div class="col-md-2">32° C/ 89.7° F</div>
-          <div class="col-md-2">32° C/ 89.7° F</div>
-        </div>
-      </div>
-      <div class="emojis">
-        <div class="row">
-          <div class="col-md-2">🌤</div>
-          <div class="col-md-2">⛈</div>
-          <div class="col-md-2">🌪</div>
-          <div class="col-md-2">🌨</div>
-          <div class="col-md-2">☀️️</div>
-        </div>
-      </div>
-    </div>
+    
+</div>
+   <div class="daytemp row">
+    <div class="col">
+      <div class="WeatherForecastPreview">
+        <div class="forecast-time">Sat</div>
+        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt=""/>
+        <div class="forecast-temperature">
+        </div></div></div>
+        <div class="col">
+          <div class="WeatherForecastPreview">
+            <div class="forecast-time">Sun</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt=""/>
+
+            <div class="forecast-temperature">
+             
+            </div></div></div>
+                <div class="col">
+                  <div class="WeatherForecastPreview">
+                    <div class="forecast-time">Mon</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt=""/>
+                    <div class="forecast-temperature">
+                      
+                    </div></div></div>
+                    <div class="col">
+                      <div class="WeatherForecastPreview">
+                        <div class="forecast-time">Tue</div>
+                        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt=""/>
+                        <div class="forecast-temperature">
+                     
+                        </div></div></div>
+                        <div class="col">
+                          <div class="WeatherForecastPreview">
+                            <div class="forecast-time">Wed</div>
+                            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt=""/>
+                            <div class="forecast-temperature">
+                        
+                            </div></div></div></div>
+    
+                            <span>
+
+    <div class="weather-forecast" id="forecast">
+      
+    </div></span>
+
     <div class= "git">
       <a href="https://github.com/JVegas1/WireFrame-Project.git"> Github-Vegas</a>
     </div>
     <script src="src/index.js"></script>
+
+   
   </body>
 </html>

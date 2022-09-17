@@ -1,30 +1,33 @@
-.days {
-    text-align: center;
-    font-weight: 2000;
-    font-display: bold;
-    font-size: 32pt;
-    text-rendering: optimizeLegibility;
-    display: block;
-    padding-left: 570px;
+.days
+.temperature-max 
+.temperature-min {
+    font-size: 24pt;
+        text-align: center;
+        text-shadow: 50%;
+        font-weight: 2000;
+        font-style: oblique;
+        color: cornflowerblue;
+        padding-left: 30px;
+   
     font-family: "Square Peg", cursive;
 }
 
-.daytemp {
-    font-size: 12pt;
+.daytemp
+ {
+    font-size: 16pt;
     text-align: center;
-    text-decoration: overline;
     text-shadow: 50%;
     font-weight: 2000;
     font-style: oblique;
     color: cornflowerblue;
-    padding-left: 600px;
+    padding-left: 30px;
 }
 
 .emojis {
     text-align: center;
     font-weight: 2000;
     font-display: bold;
-    font-size: 50pt;
+    font-size: 30pt;
     text-rendering: optimizeLegibility;
     display: block;
     padding-left: 600px;
@@ -77,4 +80,9 @@ h2 {
 
 .git {
     text-align: center;
+}
+.weather-forecast-date
+.weather-forecast-temperature
+.we {
+    font-size: 30px;
 }
