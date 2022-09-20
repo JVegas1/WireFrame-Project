@@ -46,7 +46,7 @@ function displayForecast(response) {
       forecastHTML +
       `
       <div class="col">
-        <div class="weather-forecast-date">${forecastDay.dt}</div>
+        <div class="weather-forecast-two">${forecastDay.dt}</div>
         <img
           src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
           alt=""
@@ -79,7 +79,7 @@ let form = document.querySelector("#current");
 form.addEventListener("submit", search);
 
 
-function displayWeatherCondition(response) {
+function displayTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
