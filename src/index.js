@@ -1,4 +1,9 @@
-function formatDate(date) {
+
+
+
+
+function formatDate(timestamp) {
+  let date = new Date(timestamp)
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -26,7 +31,6 @@ function formatDate(date) {
 
 
 
-
 function getForecast(coordinates) {
   console.log(coordinates);
   let apiUrl= 'https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid={2e705076d5a554467e9b0adf9237ef52}&units=metric';
@@ -40,7 +44,7 @@ function displayForecast(response) {
   let forecast= response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = `<div class="col">`;
   forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
@@ -80,17 +84,6 @@ form.addEventListener("submit", search);
 
 
 function displayTemperature(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
-  celsiusTemperature = response.data.main.temp;
-}
-
-function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   celsiusTemperature = response.data.main.temp;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
@@ -110,16 +103,14 @@ function displayTemperature(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  emojElement.setAttribute("alt", response.data.weather[0].description);
 
   // getForecast(response.data.coord);
 }
 
-
 function searchCity(city) {
   let apiKey = "2e705076d5a554467e9b0adf9237ef52";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeatherCondition);
+  axios.get(apiUrl).then(displayTemperature);
 }
 
 function handleSubmit(event) {
@@ -131,7 +122,7 @@ function handleSubmit(event) {
 function searchLocation(position) {
   let apiKey = "2e705076d5a554467e9b0adf9237ef52";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayWeatherCondition);
+  axios.get(apiUrl).then(displayTemperature);;
 }
 
 function getCurrentLocation(event) {
